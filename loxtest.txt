@@ -1,0 +1,10 @@
+class Doughnut {
+  cook(n) {
+    if(n<=1){
+        return n;
+    }
+    return this.cook(n-2) + this.cook(n-1);
+  }
+}
+
+print Doughnut().cook(10);
